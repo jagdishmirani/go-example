@@ -3,7 +3,7 @@ resources:
   - name: go_example
     type: GitRepo
     configuration:
-      path: myrepo/go-example
+      path: https://github.com/jagdishmirani/go-example.git
       branches:
         include: main
       gitProvider: myGitHub
