@@ -38,7 +38,7 @@ pipelines:
           inputResources:
             - name: go_example
           integrations:
-            - name: ArtifactoryIntegration
+            - name: myArtifactory
              
       # Publish the Go sample app binary to Artifactory
       - name: publish_go_binary
@@ -48,7 +48,7 @@ pipelines:
             - name: build_go
           targetRepository: myrepo-go
           integrations:
-            - name: ArtifactoryIntegration
+            - name: myArtifactory
              
       # Publish the Go sample app build info
       - name: publish_build
@@ -68,7 +68,7 @@ pipelines:
           targetRepository: myrepo-go
           autoPublishBuildInfo: true
           integrations:
-            - name: ArtifactoryIntegration
+            - name: myArtifactory
           inputResources:
             - name: go_example
           outputResources:
