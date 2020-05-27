@@ -59,6 +59,8 @@ pipelines:
           outputResources:
             - name: go_build_info_publish
              
+
+
       # Publish the Go module from the GitRepo
       - name: publish_go_module
         type: GoPublishModule
